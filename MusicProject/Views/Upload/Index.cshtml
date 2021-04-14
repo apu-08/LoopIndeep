@@ -1,0 +1,91 @@
+﻿@model IEnumerable<MusicProject.Models.Files>
+@{
+    ViewData["Title"] = "Upload";
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>UploadAudio</title>
+</head>
+<body>
+    <div class="aboutbg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="abouttitlepage">
+                        <h2>upload</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="container py-4">
+        <div class="card">
+            <div class="card-header bg-primary text-white">
+                <h6 class="text-uppercase">Audio List</h6>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-5">
+                        <form method="post" enctype="multipart/form-data" asp-controller="Upload" asp-action="Index">
+                            <div class="form-group">
+                                <div class="col-md-10">
+                                    <p>Upload file</p>
+                                    <input class="form-control" name="files" type="file" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-10">
+                                    <input class="btn btn-success" type="submit" value="Upload" />
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <table id="dataTable" class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                           
+                            <th>FileName</th>
+                            <th>Created On</th>
+                            <th>Play Audio</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                
+                                <td>@item.Name</td>
+                                <td>@item.CreatedOn</td>
+                                <td>
+                                    <audio controls>
+                                        <source src="@Url.Content(@item.FilePath)" type="audio/mp3">
+                                    </audio>
+                                </td>
+                                <td>
+                        <a  asp-controller="Upload"  asp-action="Delete" asp-route-id="@item.DocumentId" asp-route-fp="@item.Name" class="text-danger ml-1" onclick="return confirm('Are you sure to delete this record?')">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
+                                        <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
+                                    </svg></a>
+
+                                </td>
+
+                            </tr>
+
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

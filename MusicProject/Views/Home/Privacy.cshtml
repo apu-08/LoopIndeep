@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - LoopIndeep</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <partial name="~/Views/Home/_LoginPartial.cshtml" />
+    </header>
+    <div>
+        
+            @RenderBody()
+    </div>
+    
+    
+    <footer>
+        <hr style="border:4px solid white">
+        <div class="container">
+            <div class="col-lg-3 col-md-6 col-sm-12 width">
+                <div class="footerlinks">
+
+                    <img src="~/icon/fb.png" alt="icon" />
+                    <img src="~/icon/tw.png" alt="icon" />
+                    <img src="~/icon/lin(2).png" alt="icon" />
+                    <img src="~/icon/instagram.png" alt="icon" />
+                </div>
+            </div>
+            <br />
+            <div class="container text-white">
+                &copy; 2021 - LoopIndeep - Designed and Developed by Gayathri - Nivedha - SriNisha - Sunil
+            </div>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

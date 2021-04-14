@@ -1,0 +1,122 @@
+﻿@{
+    ViewData["Title"] = "Artist";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        footer {
+            clear: both;
+            background-color: #000;
+            width: 100%;
+            padding: 20px 0;
+            border-bottom: 1px solid #5c5c5c;
+            position: absolute;
+            bottom: 0px;
+            margin: 0 auto -1050px
+        }
+        @@media only screen and (max-width : 960px) {
+            footer {
+                clear: both;
+                background-color: #000;
+                width: 100%;
+                padding: 20px 0;
+                border-bottom: 1px solid #5c5c5c;
+                position: absolute;
+                bottom: 0px;
+                margin: 0 auto -4500px
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="aboutbg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="abouttitlepage">
+                        <h2>Artist</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container justify-content-around justify-content-between justify-content-center justify-content-end justify-content-start">
+            <div class="row-col-lg-3 row-col-md-6 row-col-sm-12 card-deck">
+                <div class="card">
+                    <img src="https://www.wikibiopic.com/wp-content/uploads/2020/01/Mugen-Rao-Images.jpg"
+                         class="card-img-top"
+                         alt="..." />
+                    <div class="card-body bg-light">
+                        <h5 class="card-title align-content-center text-capitalize text-white">MUGEN RAO</h5>
+                    </div>
+                    <div class="card-footer">
+                        <a asp-action="ArtistDescription" asp-controller="Home" asp-route-artistname="MUGEN RAO" asp-route-artistinstagram="https://www.instagram.com/themugenrao/?hl=en" asp-route-artistimage="https://www.wikibiopic.com/wp-content/uploads/2020/01/Mugen-Rao-Images.jpg" asp-route-artistinfo ="Mugan Rao, also known as MGR, was born on 20 October 1995 (22 years old; age in 2018) in Kuala Lumpur, Malaysia. His father was a stage performer and, so, he started performing along with his father to overcome financial constraints. Becoming an actor was a childhood dream for Mugen." class="btn rounded-pill btn-outline-primary text-white">View More</a>
+                    </div>
+
+                </div>
+
+                <div class="card">
+                    <img src="https://www.newsbugz.com/wp-content/uploads/2018/03/TeeJay-Arunachalam-Images-14-700x700.jpg"
+                         class="card-img-top"
+                         alt="..." />
+                    <div class="card-body bg-light">
+                        <h5 class="card-title align-content-center text-capitalize text-white">TEEJAY ARUNACHALAM</h5>
+                    </div>
+                    <div class="card-footer">
+                        <a  asp-action="ArtistDescription" asp-controller="Home" asp-route-artistname="TEEJAY ARUNACHALAM" asp-route-artistinstagram="https://z-p42.www.instagram.com/teejay_lovers_official/" asp-route-artistimage="https://www.newsbugz.com/wp-content/uploads/2018/03/TeeJay-Arunachalam-Images-14-700x700.jpg" asp-route-artistinfo ="TeeJay Arunachalam, better known by his stage name TeeJay is a British origin Tamil singer, songwriter, and composer who became famous for his international hit 'Muttu Muttu'. TeeJay became a global superstar overnight. The music video for his first single has reached over 10 million views" class="btn btn-outline-warning rounded-pill text-white">View More</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://www.newsbugz.com/wp-content/uploads/2020/01/Ratty-Adhiththan-1.png"
+                         class="card-img-top"
+                         alt="..." />
+                    <div class="card-body bg-light">
+                        <h5 class="card-title align-content-center text-capitalize text-white">RATTY ADHITHTHAN</h5>
+                    </div>
+                    <div class="card-footer">
+                        <a  asp-action="ArtistDescription" asp-controller="Home" asp-route-artistname="RATTY ADHITHTHAN" asp-route-artistinstagram="https://www.instagram.com/ratty_adhiththan/?hl=en" asp-route-artistimage="https://www.newsbugz.com/wp-content/uploads/2020/01/Ratty-Adhiththan-1.png" asp-route-artistinfo ="Kajith Sriskantharasa who is better known by his stage name Ratty Adhiththan is a Tamil Rapper, Lyricists and music composer. Originally from Jaffna. He moved to Malaysia in 2007 for his higher education. ... He started writing and taking part in Tamil rap competitions in Europe." class="btn btn-outline-dark rounded-pill text-white">View More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-col-lg-3 row-col-md-6 row-col-sm-12 card-deck">
+                <div class="card">
+                    <img src="https://i2.cinestaan.com/image-bank/1500-1500/160001-161000/160380.jpg"
+                         class="card-img-top"
+                         alt="..." />
+                    <div class="card-body bg-light">
+                        <h5 class="card-title align-content-center text-capitalize text-white">HIP HOP TAMIZHA ADHI</h5>
+                    </div>
+                    <div class="card-footer">
+                        <a  asp-action="ArtistDescription" asp-controller="Home" asp-route-artistname="HIP HOP TAMIZHA ADHI" asp-route-artistinstagram="https://www.instagram.com/hiphoptamizha/?hl=en" asp-route-artistimage="https://i2.cinestaan.com/image-bank/1500-1500/160001-161000/160380.jpg" asp-route-artistinfo ="Hiphop Tamizha is an Indian musical duo based in Chennai, Tamil Nadu. The duo consists of Adhithya Adhi Venkatapathy and R. Jeeva. Their commercial break-through came with the song Club le Mabbu le in 2011" class="btn btn-outline-success rounded-pill text-white">View More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://4.bp.blogspot.com/-2OQHv_v23FM/WxwF-3CV6bI/AAAAAAAAGM4/11i-NBdK0CcudNL7NcvFgcPJeuMJRuGggCLcBGAs/s1600/Vidya%2BVox%2B%25281%2529.jpg" 
+                         class="card-img-top"
+                         alt="..." />
+                    <div class="card-body bg-light">
+                        <h5 class="card-title align-content-center text-capitalize text-white">VIDYA VOX</h5>
+                    </div>
+                    <div class="card-footer">
+                        <a  asp-action="ArtistDescription" asp-controller="Home" asp-route-artistname="VIDYA VOX" asp-route-artistinstagram="https://www.instagram.com/vidyavox/?hl=en" asp-route-artistimage="https://4.bp.blogspot.com/-2OQHv_v23FM/WxwF-3CV6bI/AAAAAAAAGM4/11i-NBdK0CcudNL7NcvFgcPJeuMJRuGggCLcBGAs/s1600/Vidya%2BVox%2B%25281%2529.jpg" asp-route-artistinfo ="Vidya Iyer, better known by her stage name Vidya Vox, is an American YouTuber and singer. She was born in Chennai, Tamil Nadu, India and immigrated with her family to the United States of America at the age of eight. Her music is a mix of Classical rappers, electronic dance music, and Indian classical music" class="btn btn-outline-secondary rounded-pill text-white">View More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://i.scdn.co/image/e926e3d8ccd8cf56e1ffa4180c8a76bb3d9e9ef7"
+                         class="card-img-top"
+                         alt="..." />
+                    <div class="card-body bg-light">
+                        <h5 class="card-title align-content-center text-capitalize text-white">VIVEK AND MERVIN</h5>
+                    </div>
+                    <div class="card-footer">
+                        <a  asp-action="ArtistDescription" asp-controller="Home" asp-route-artistname="VIVEK AND MERVIN" asp-route-artistinstagram="https://www.instagram.com/viveksivaofficial/?hl=en" asp-route-artistimage="https://i.scdn.co/image/e926e3d8ccd8cf56e1ffa4180c8a76bb3d9e9ef7" asp-route-artistinfo ="Vivek Siva trained as a classical musician and performed with numerous bands during his school and college days. Mervin Solomon had worked as a music producer, and scored music for albums in gospel and classical genres. Vivek, Mervin, and Anirudh Ravichander are from the band Zinx. Vivek and Mervin later worked as music producers and mix engineers for Anirudh Ravichander on his projects." class="btn btn-outline-light rounded-pill text-white">View More</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

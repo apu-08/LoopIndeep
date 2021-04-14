@@ -1,0 +1,58 @@
+﻿@page
+@model LoginModel
+
+@{
+    ViewData["Title"] = "Log in";
+}
+
+<head>
+    <style>
+        footer {
+            clear: both;
+            background-color: #000;
+            width: 100%;
+            padding: 20px 0;
+            border-bottom: 1px solid #5c5c5c;
+            position: absolute;
+            bottom: 0px;
+            margin: 0 auto -450px
+        }
+    </style>
+    <link href="~/css/site.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body class="sign-body">
+    <div class="signup-pg">
+
+        <form id="account" method="post" class="container-sign">
+            <div asp-validation-summary="All"></div>
+            <label asp-for="Input.Email"></label>
+            <input asp-for="Input.Email" type="text" />
+            <span asp-validation-for="Input.Email"></span>
+
+            <label asp-for="Input.Password"></label>
+            <input asp-for="Input.Password" type="password" class="text-black-50"/>
+            <span asp-validation-for="Input.Password"></span>
+
+            <div class="checkbox">
+                <label asp-for="Input.RememberMe">
+                    <input asp-for="Input.RememberMe" />
+                    @Html.DisplayNameFor(m => m.Input.RememberMe)
+                </label>
+            </div>
+
+            <button type="submit" class="btn-sign">Log in</button>
+
+            <p>
+                <a id="forgot-password" asp-page="./ForgotPassword">Forgot your password?</a>
+            </p>
+            <p>
+                <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Register as a new user</a>
+            </p>
+        </form>
+    </div>
+</body>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

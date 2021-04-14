@@ -1,0 +1,59 @@
+﻿@{
+    ViewData["Title"] = "ArtistDescription";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        #artistimage {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h4 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #insta img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        footer {
+            clear: both;
+            background-color: #000;
+            width: 100%;
+            padding: 20px 0;
+            border-bottom: 1px solid #5c5c5c;
+            position: absolute;
+            bottom: 0px;
+            margin: 0 auto -1200px
+        }
+        .footerlinks img {
+            display: inline-block;
+            padding-right: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="aboutbg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="abouttitlepage">
+                        <h2>@ViewBag.artistname</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img id="artistimage" src=@ViewBag.artistimage style="width:50%;" />
+        <br>
+        <h4 style="width:50%;">@ViewBag.artistinfo To get more information <a href=@ViewBag.artistinstagram><img src="~/icon/instagram.png" alt="icon" /></a></h4><br>
+        <a style="margin-left:40%;margin-right:40%" asp-controller="Home" asp-action="Artist" class="btn rounded-pill btn-outline-primary text-white">Back</a>
+        
+    </div>
+</body>
+</html>

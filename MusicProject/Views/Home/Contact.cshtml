@@ -1,0 +1,68 @@
+﻿@model MusicProject.Models.Contact
+
+@{
+    ViewData["Title"] = "Contact";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        footer {
+            clear: both;
+            background-color: #000;
+            width: 100%;
+            padding: 20px 0;
+            border-bottom: 1px solid #5c5c5c;
+            position: absolute;
+            bottom: 0px;
+            margin: 0 auto -250px
+        }
+    </style>
+</head>
+<body>
+    <div class="aboutbg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="abouttitlepage">
+                        <h2>contact us</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="column">
+                    <h3>&nbsp;&nbsp;&nbsp;GET IN TOUCH</h3>
+                    @using (Html.BeginForm("Contact", "Home", FormMethod.Post, new { @class = "contctform" }))
+                    {
+
+                        <div class="col-sm-12">
+
+                            @Html.TextBoxFor(m => m.CName, new { placeholder = "Name", @type = "text", @class = "contactus" })
+                        </div>
+                        <div class="col-sm-12">
+
+                            @Html.TextBoxFor(m => m.PhoneNumber, new { placeholder = "PhoneNumber", @type = "number", @class = "contactus" })
+                        </div>
+                        <div class="col-sm-12">
+
+                            @Html.TextBoxFor(m => m.Email, new { placeholder = "Email", @type = "email", @class = "contactus" })
+                        </div>
+                        <div class="col-sm-12">
+
+                            @Html.TextBoxFor(m => m.CMessage, new { placeholder = "Message", @type = "text", @class = "contactus" })
+                        </div>
+                        <div class="col-sm-12">
+                            <button class="send">Send</button>
+                        </div>
+                    }
+                </div>
+                <div class="column">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.6732625271434!2d80.22782571464471!3d12.928709390884002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525c58e5fa33e5%3A0xf7b332a51fce3470!2sCognizant%20TCO!5e0!3m2!1sen!2sin!4v1617389056296!5m2!1sen!2sin" width="600" height="500" style="border:0;" id="location" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

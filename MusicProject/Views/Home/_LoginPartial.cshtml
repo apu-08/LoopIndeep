@@ -1,0 +1,16 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using MusicProject.Areas.Identity.Data
+
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+<ul class="navbar-nav">
+    @if (SignInManager.IsSignedIn(User))
+    {
+        <partial name="_LoginHeader" />
+    }
+    else
+    {
+        <partial name="_Header" />
+    }
+</ul>

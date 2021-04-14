@@ -1,0 +1,370 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+
+html {
+  position: relative;
+  min-height: 100%;
+   
+}
+
+.aboutbg {
+    opacity: 0.8;
+    background-color: #FFB6C1;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    left: 0px;
+}
+
+
+
+.aboutbg .abouttitlepage h2 {
+        width :auto ;
+        color: black;
+        text-transform: uppercase;
+        font-size: 40px;
+        line-height: 45px;
+        padding: 40px 0;
+        font-weight: 700;
+        text-align: center;
+}
+
+    /*.music-box {
+        padding: 90px 0px;
+        background: #000;
+    }*/
+
+
+        .for-box {
+            padding: 100px 20px;
+            background: #000;
+        }
+
+        .for-box i {
+            text-align: center;
+            display: block;
+        }
+
+        .for-box h3 {
+            padding-top: 28px;
+            font-size: 20px;
+            line-height: 25px;
+            color: #fff;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+         .for-box p {
+            font-size: 16px;
+            line-height: 22px;
+            color: #fff
+        }
+
+.img-box figure {
+    margin: 0px;
+}
+
+.padding {
+    padding: 0px;
+}
+
+.text-box {
+    background: #FFB6C1;
+    width: 100%;
+    height: 50%;
+    margin: 350px 0px;
+    box-sizing: border-box !important;
+    border-radius :20px;
+}
+
+    .text-box .box {
+        padding-top: 80px;
+        margin-left: 30px;
+    }
+
+        .text-box .box i {
+            padding-bottom: 10px;
+        }
+
+            .text-box .box i img {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: 250px;
+            }
+
+        .text-box .box h3 {
+            font-size: 55px;
+            line-height: 60px;
+            color: #fff;
+            text-transform: uppercase;
+            padding: 12px 0px;
+        }
+
+        .text-box .box p {
+            color: #fff;
+            font-size: 17px;
+            line-height: 22px;
+        }
+
+
+.footerdesign {
+    background-color :black;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /* Vertically center the text there */
+}
+.footerlinks img{
+    padding-right :15px;
+}
+
+.contctform {
+    width: 70%;
+}
+
+.contactus {
+    border: #b1b0b0 solid 1px;
+    padding: 12px 19px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    color: #000;
+    width: 100%;
+    height: 60px;
+}
+
+.send {
+    font-size: 16px;
+    border: #fff solid 1px;
+    padding: 10px 50px;
+    background-color: black;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    color: #fff
+}
+
+    .send:hover {
+        background-color: #f70e0e;
+        border: #f70e0e solid 1px;
+        color: #fff;
+    }
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 2px;
+    height: 300px;
+}
+
+footer {
+    clear: both;
+    background-color: #000;
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 1px solid #5c5c5c;
+    position: relative;
+    bottom: 0px;
+}
+
+    footer p {
+        padding-left: 5px;
+        color: #fff;
+        display: table-cell;
+    }
+
+.signup-pg {
+    min-height: 380px;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: black;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container-sign {
+    position: absolute;
+    right: 20%;
+    margin: 20px;
+    max-width: 300px;
+    padding: 16px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    outline: none;
+    border-width: 0 0 2px;
+    border-color: black;
+    color: black;
+}
+
+    input[type=text]:focus {
+        background-color: white;
+        color: black;
+        outline: none;
+    }
+
+    input[type=password]:focus {
+        background-color: white;
+        color: black;
+        outline: none;
+    }
+/* Set a style for the submit button */
+.btn-sign {
+    background-color: hotpink;
+    color: white;
+    padding: 16px 20px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    margin: 4px 2px;
+}
+
+    .btn-sign:hover {
+        opacity: 1;
+    }
+
+.sign-body {
+    background: url('signimg.png');
+    min-height: 380px;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: black;
+}
+
+.a-sign {
+    margin-top: 50px;
+    color: darkviolet;
+    text-decoration: none;
+}
+
+.reg-body {
+    background: url('register.png');
+    min-height: 380px;
+    font-family: 'Roboto', serif;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: white;
+    background-attachment: fixed;
+    text-align: left;
+}
+
+.reg-container {
+    position: absolute;
+    top: 25%;
+    right: 35%;
+    max-width: 700px;
+    width: 400px;
+    padding: 16px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.reg-input input[type=text] {
+    width: 100%;
+    padding: 5px;
+    outline: none;
+    margin: 2px 0 12px 0;
+    border-width: 0 0 2px;
+    border-color: chocolate;
+    background: black;
+}
+
+.reg-input input[type=password] {
+    width: 100%;
+    padding: 5px;
+    margin: 2px 0 12px 0;
+    outline: none;
+    border-width: 0 0 2px;
+    border-color: chocolate;
+    background: black;
+    color: white;
+}
+
+.reg-input input[type=text]:focus,
+input[type=password]:focus {
+    color: white;
+    outline: none;
+}
+
+.reg-input select {
+    color: white;
+    width: 100%;
+    padding: 5px;
+    margin: 2px 0 12px 0;
+    outline: none;
+    border-width: 0 0 2px;
+    border-color: chocolate;
+    background: black;
+}
